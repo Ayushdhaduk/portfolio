@@ -292,6 +292,16 @@ a:hover {
     transform: scale(1.02);
 }
 
+.navbar-brand img,
+.overlay-nav-link img {
+    transition: filter var(--transition-speed) ease;
+}
+
+[data-bs-theme="light"] .navbar-brand img,
+[data-bs-theme="light"] .overlay-nav-link img {
+    filter: invert(1) brightness(0.15) contrast(1.2);
+}
+
 /* Glowing Availability Dot */
 .status-badge {
     position: relative;
