@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+
+    <title>Ayush Dhaduk | Java Full Stack Developer</title>
+
+    <!-- ===== SEO ===== -->
+    <meta name="description" content="Java Full Stack Developer Portfolio — projects, skills, and experience.">
+    <meta name="keywords" content="Ayush Dhaduk, Java Developer, Spring Boot Developer, Full Stack Developer, Web Developer Portfolio">
+    <meta name="author" content="Ayush Dhaduk">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ayush Dhaduk | Java Full Stack Developer">
+    <meta property="og:description" content="Java Full Stack Developer Portfolio — projects, skills, and experience.">
+    <meta property="og:image" content="images/og-preview.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ayush Dhaduk | Java Full Stack Developer">
+    <meta name="twitter:description" content="Java Full Stack Developer Portfolio — projects, skills, and experience.">
+    <meta name="twitter:image" content="images/og-preview.jpg">
+
+    <!-- ===== Favicon ===== -->
+    <link rel="icon" type="image/svg+xml" href="files/favicon.svg">
+    <link rel="alternate icon" href="files/favicon.svg">
+    <link rel="apple-touch-icon" href="files/favicon.svg">
+    <meta name="theme-color" id="meta-theme-color" content="#ffffff">
+
+    <!-- ===== Structured Data (SEO rich results) ===== -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ayush Dhaduk",
+        "jobTitle": "Java Full Stack Developer",
+        "url": "./",
+        "sameAs": ["https://github.com/Ayushdhaduk", "https://linkedin.com/in/ayush-dhaduk"]
+    }
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Devicon CDN -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css?v=2.6">
+</head>
+<body>
+
+    <!-- Accessibility: Skip to content -->
+    <a href="#main-content" class="visually-hidden-focusable">Skip to main content</a>
+
+    <!-- Background Glow Blobs -->
+    <div class="glow-blob blob-1"></div>
+    <div class="glow-blob blob-2"></div>
+    <div class="glow-blob blob-3"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-progress-indicator"></div>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+        <div class="container">
+            <!-- Custom Mobile Menu Toggle Trigger -->
+            <button class="custom-navbar-toggler d-lg-none" type="button" id="mobile-menu-toggle" aria-label="Toggle navigation">
+                <span class="toggler-line line-1"></span>
+                <span class="toggler-line line-2"></span>
+                <span class="toggler-line line-3"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-center position-relative">
+                    <div class="navbar-active-indicator" id="nav-indicator"></div>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#achievements">Achievements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <!-- Theme Toggle Switch -->
+                    <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+                        <button class="btn btn-theme-toggle" id="theme-toggle-btn" aria-label="Toggle theme">
+                            <i class="bi bi-moon-stars-fill theme-icon-dark"></i>
+                            <i class="bi bi-sun-fill theme-icon-light d-none"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Custom Mobile Full-Screen Glass Overlay Menu -->
+    <div class="mobile-glass-overlay" id="mobile-overlay-menu">
+        <div class="overlay-header d-flex justify-content-between align-items-center px-4 py-3">
+            <span class="logo-brand">Ayush.Dev</span>
+            <button class="overlay-close-btn" id="overlay-close" aria-label="Close Menu">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="overlay-body d-flex flex-column align-items-center justify-content-center">
+            <ul class="overlay-nav-list text-center">
+                <li><a href="#hero" class="overlay-nav-link">Home</a></li>
+                <li><a href="#about" class="overlay-nav-link">About</a></li>
+                <li><a href="#skills" class="overlay-nav-link">Skills</a></li>
+                <li><a href="#services" class="overlay-nav-link">Services</a></li>
+                <li><a href="#experience" class="overlay-nav-link">Experience</a></li>
+                <li><a href="#projects" class="overlay-nav-link">Projects</a></li>
+                <li><a href="#achievements" class="overlay-nav-link">Achievements</a></li>
+                <li><a href="#contact" class="overlay-nav-link">Contact</a></li>
+                <li class="mt-4">
+                    <button class="btn btn-theme-toggle mx-auto" id="theme-toggle-btn-mobile" aria-label="Toggle theme">
+                        <i class="bi bi-moon-stars-fill mobile-theme-icon-dark"></i>
+                        <i class="bi bi-sun-fill mobile-theme-icon-light d-none"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Main Content Block -->
+    <main id="main-content">
+        
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section d-flex align-items-center position-relative overflow-hidden">
+            <!-- Animated technology background -->
+            <div class="hero-tech-bg position-absolute w-100 h-100 overflow-hidden" style="top: 0; left: 0; pointer-events: none; z-index: 1;">
+                <!-- Canvas for lines and trails -->
+                <canvas id="hero-gateway-canvas" class="position-absolute w-100 h-100" style="top: 0; left: 0; pointer-events: none; z-index: 1;"></canvas>
+                
+                <!-- Technology Logos inside DOM for high-fidelity rendering -->
+                <div id="tech-logo-container" class="position-absolute w-100 h-100" style="top: 0; left: 0; pointer-events: none; z-index: 2;">
+                    <div class="gateway-logo" data-color="#EA2D2E"><i class="devicon-java-plain"></i></div>
+                    <div class="gateway-logo" data-color="#6DB33F"><i class="devicon-spring-original"></i></div>
+                    <div class="gateway-logo" data-color="#E34F26"><i class="devicon-html5-plain"></i></div>
+                    <div class="gateway-logo" data-color="#1572B6"><i class="devicon-css3-plain"></i></div>
+                    <div class="gateway-logo" data-color="#F7DF1E"><i class="devicon-javascript-plain"></i></div>
+                    <div class="gateway-logo" data-color="#00758F"><i class="devicon-mysql-original"></i></div>
+                    <div class="gateway-logo" data-color="#F05032"><i class="devicon-git-plain"></i></div>
+                    <div class="gateway-logo" data-color="#ffffff"><i class="devicon-github-original"></i></div>
+                </div>
+
+                <!-- Background moving orbs / particles -->
+                <div class="hero-particle particle-1"></div>
+                <div class="hero-particle particle-2"></div>
+                <div class="hero-particle particle-3"></div>
+            </div>
+
+            <div class="container position-relative" style="z-index: 2;">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10 col-xl-9 text-center">
+                        <span class="badge bg-primary-glow mb-4 px-3 py-2 text-uppercase tracking-wider">Welcome to my Portfolio</span>
+                        <h1 class="hero-title mb-3">
+                            Hi, I'm <span class="text-gradient">Ayush Dhaduk</span>
+                        </h1>
+                        <h2 class="hero-subtitle mb-4">
+                            I am a <span class="typed-text">Java Full Stack Developer</span>
+                        </h2>
+                        <p class="hero-desc mb-5 mx-auto" style="max-width: 760px; font-size: 1.15rem; line-height: 1.7;">
+                            A passionate and diligent BCA graduate from Atmiya University, currently pursuing a Full Stack Web Development course to enhance technical skills. Interested in creating responsive and user-friendly web applications while continuously learning modern technologies to grow as a professional web developer.
+                        </p>
+                        
+                        <div class="hero-actions d-flex flex-column flex-sm-row justify-content-center gap-3">
+                            <a href="#projects" class="btn btn-primary-glass px-4 py-3">
+                                <i class="bi bi-briefcase me-2"></i>View Projects
+                            </a>
+                            <a href="#contact" class="btn btn-secondary-glass px-4 py-3">
+                                <i class="bi bi-envelope me-2"></i>Contact Me
+                            </a>
+                        </div>
+
+                        <div class="hero-socials-list mt-5 d-flex justify-content-center gap-3">
+                            <a href="https://github.com/Ayushdhaduk" target="_blank" class="hero-social-icon" aria-label="GitHub"><i class="bi bi-github"></i></a>
+                            <a href="https://linkedin.com/in/ayush-dhaduk" target="_blank" class="hero-social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section py-5 scroll-reveal position-relative overflow-hidden">
+            <!-- Decorative background blobs for premium depth -->
+            <div class="about-glow-blob blob-left"></div>
+            <div class="about-glow-blob blob-right"></div>
+
+            <div class="container py-5 position-relative" style="z-index: 2;">
+                <div class="section-header text-center mb-5">
+                    <h2 class="about-heading">About Me</h2>
+                    <div class="about-heading-line mx-auto mt-3"></div>
+                </div>
+
+                <!-- Short Introduction (4-5 lines centered, reduced width) -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-7 text-center">
+                        <p class="lead-text mb-0" style="font-size: 1.25rem; line-height: 1.9; color: var(--text-primary); font-weight: 450; letter-spacing: -0.2px;">
+                            I am a software engineer focused on building robust backend systems and responsive web applications. With a strong foundation in Java, Spring Boot, and database architecture, I specialize in designing scalable APIs and layered architectures. My goal is to create performant, user-centric solutions using modern technologies.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Three Premium Feature Cards Grid -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="row g-4">
+                            
+                            <!-- Card 1: Java Development -->
+                            <div class="col-md-4">
+                                <div class="about-feature-card h-100 p-4">
+                                    <div class="feature-icon-wrapper mb-4">
+                                        <i class="bi bi-code-slash"></i>
+                                    </div>
+                                    <h3 class="h5 mb-3 fw-bold">Java Development</h3>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6;">
+                                        Building secure backends, RESTful APIs, and robust database models using Java, Spring Boot, and Hibernate (JPA).
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Card 2: Full Stack Development -->
+                            <div class="col-md-4">
+                                <div class="about-feature-card h-100 p-4">
+                                    <div class="feature-icon-wrapper mb-4">
+                                        <i class="bi bi-layers-half"></i>
+                                    </div>
+                                    <h3 class="h5 mb-3 fw-bold">Full Stack Development</h3>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6;">
+                                        Bridging backend logic with fluid, pixel-perfect user interfaces designed for cross-device compatibility.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Card 3: Database & API Design -->
+                            <div class="col-md-4">
+                                <div class="about-feature-card h-100 p-4">
+                                    <div class="feature-icon-wrapper mb-4">
+                                        <i class="bi bi-lightning-charge-fill"></i>
+                                    </div>
+                                    <h3 class="h5 mb-3 fw-bold">Database & API Design</h3>
+                                    <p class="text-muted small mb-0" style="line-height: 1.6;">
+                                        Designing relational databases using MySQL, optimizing JPA/Hibernate mapping, and structuring microservices.
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TECH STACK Section -->
+        <section id="skills" class="ts-minimal-section scroll-reveal" aria-label="Tech Stack">
+            <div class="ts-orb ts-orb-1"></div>
+            <div class="ts-orb ts-orb-2"></div>
+
+            <div class="container position-relative" style="z-index: 2;">
+                <!-- Section heading -->
+                <div class="text-center mb-5">
+                    <h2 class="ts-min-heading">Tech Stack</h2>
+                    <p class="ts-min-sub mt-3">Technologies I build with.</p>
+                </div>
+
+                <!-- Tech Cards Grid -->
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Java -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card" id="ts-card-java">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap" style="background:rgba(234,45,46,0.1); border-color:rgba(234,45,46,0.25);">
+                                    <i class="devicon-java-plain" style="font-size:34px;color:#EA2D2E;"></i>
+                                </div>
+                                <h3 class="ss-card-title">Java</h3>
+                                <p class="ss-card-desc">Object-oriented programming, logic building, and application development.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#EA2D2E,#f89820);"></div>
+                        </div>
+                    </div>
+
+                    <!-- Spring Boot -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card" id="ts-card-springboot">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap" style="background:rgba(109,179,63,0.1); border-color:rgba(109,179,63,0.25);">
+                                    <i class="devicon-spring-original" style="font-size:34px;color:#6DB33F;"></i>
+                                </div>
+                                <h3 class="ss-card-title">Spring Boot</h3>
+                                <p class="ss-card-desc">Building production-grade, secure microservices and RESTful APIs.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#6DB33F,#8bc34a);"></div>
+                        </div>
+                    </div>
+
+                    <!-- MySQL -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card" id="ts-card-mysql">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap" style="background:rgba(0,117,143,0.1); border-color:rgba(0,117,143,0.25);">
+                                    <i class="devicon-mysql-original" style="font-size:34px;color:#00758F;"></i>
+                                </div>
+                                <h3 class="ss-card-title">MySQL</h3>
+                                <p class="ss-card-desc">Database schema design, relational mapping, and SQL optimization.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#00758F,#f29111);"></div>
+                        </div>
+                    </div>
+
+                    <!-- HTML -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card" id="ts-card-html">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap" style="background:rgba(227,79,38,0.1); border-color:rgba(227,79,38,0.25);">
+                                    <i class="devicon-html5-plain" style="font-size:34px;color:#E44D26;"></i>
+                                </div>
+                                <h3 class="ss-card-title">HTML</h3>
+                                <p class="ss-card-desc">Creating structured and responsive web layouts.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#E34F26,#F16529);"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- More Skills (Hidden by Default) -->
+                <div id="moreSkills" class="row g-4 justify-content-center mt-4">
+
+                    <!-- CSS -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap">
+                                    <i class="fa-brands fa-css3-alt" style="font-size:34px;color:#1572B6;"></i>
+                                </div>
+                                <h3 class="ss-card-title">CSS</h3>
+                                <p class="ss-card-desc">Responsive layouts, animations, Flexbox and Grid.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#1572B6,#33A9DC);"></div>
+                        </div>
+                    </div>
+
+                    <!-- JavaScript -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap">
+                                    <i class="fa-brands fa-js" style="font-size:34px;color:#F7DF1E;"></i>
+                                </div>
+                                <h3 class="ss-card-title">JavaScript</h3>
+                                <p class="ss-card-desc">Interactive UI, DOM manipulation and dynamic features.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#F7DF1E,#FFD43B);"></div>
+                        </div>
+                    </div>
+
+                    <!-- C -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap">
+                                    <i class="fa-solid fa-c" style="font-size:34px;color:#00599C;"></i>
+                                </div>
+                                <h3 class="ss-card-title">C</h3>
+                                <p class="ss-card-desc">Programming fundamentals, logic building and problem solving.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#00599C,#4DA6FF);"></div>
+                        </div>
+                    </div>
+
+                    <!-- C++ -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="ss-card ts-tech-card">
+                            <div class="ss-card-shine"></div>
+                            <div class="ss-card-body">
+                                <div class="ss-emoji-wrap ts-icon-wrap">
+                                    <i class="fa-solid fa-code" style="font-size:34px;color:#00599C;"></i>
+                                </div>
+                                <h3 class="ss-card-title">C++</h3>
+                                <p class="ss-card-desc">Object-oriented programming, STL and application development.</p>
+                            </div>
+                            <div class="ss-card-glow-bar" style="background:linear-gradient(90deg,#00599C,#659AD2);"></div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-4">
+                    <button id="toggleSkills" class="skills-toggle-btn">View More Skills</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section id="services" class="premium-services-section scroll-reveal" aria-label="Services">
+            <div class="container position-relative" style="z-index: 2;">
+                <!-- Section Header -->
+                <div class="text-center mb-5">
+                    <div class="section-badge mx-auto mb-3">
+                        <span class="badge-icon">✨</span> My Expertise
+                    </div>
+                    <h2 class="services-main-title">Services I Provide</h2>
+                    <p class="services-subtitle mt-3 mx-auto">Building scalable applications, optimized databases, and responsive web experiences.</p>
+                </div>
+
+                <!-- Cards Container -->
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Card 1: Java App Development -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="premium-svc-card" id="svc-card-java">
+                            <div class="svc-bg-glow glow-color-blue"></div>
+                            <div class="svc-card-inner border-gradient-blue">
+                                <div class="svc-reflection"></div>
+                                <div class="svc-icon-box box-glow-blue">
+                                    <i class="bi bi-terminal"></i>
+                                </div>
+                                <h3 class="svc-title">Java Application Development</h3>
+                                <p class="svc-desc">Building robust, object-oriented applications and secure enterprise solutions.</p>
+                                <div class="svc-tags">
+                                    <span class="svc-tag">Java</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">OOP</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">Enterprise</span>
+                                </div>
+                                <div class="svc-bottom-line bg-gradient-blue"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Backend Development -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="premium-svc-card" id="svc-card-backend">
+                            <div class="svc-bg-glow glow-color-purple"></div>
+                            <div class="svc-card-inner border-gradient-purple">
+                                <div class="svc-reflection"></div>
+                                <div class="svc-icon-box box-glow-purple">
+                                    <i class="bi bi-server"></i>
+                                </div>
+                                <h3 class="svc-title">Backend Development</h3>
+                                <p class="svc-desc">Developing secure, scalable, and high-performance server-side applications.</p>
+                                <div class="svc-tags">
+                                    <span class="svc-tag">Spring Boot</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">Hibernate</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">Authentication</span>
+                                </div>
+                                <div class="svc-bottom-line bg-gradient-purple"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Frontend Development -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="premium-svc-card" id="svc-card-layout">
+                            <div class="svc-bg-glow glow-color-cyan"></div>
+                            <div class="svc-card-inner border-gradient-cyan">
+                                <div class="svc-reflection"></div>
+                                <div class="svc-icon-box box-glow-cyan">
+                                    <i class="bi bi-layout-text-window-reverse"></i>
+                                </div>
+                                <h3 class="svc-title">Frontend Development</h3>
+                                <p class="svc-desc">Creating responsive, modern and engaging user interfaces with smooth user experiences.</p>
+                                <div class="svc-tags">
+                                    <span class="svc-tag">HTML</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">CSS</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">JavaScript</span>
+                                </div>
+                                <div class="svc-bottom-line bg-gradient-cyan"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: REST API Development -->
+                    <div class="col-lg-3 col-md-6">
+                        <div class="premium-svc-card" id="svc-card-api">
+                            <div class="svc-bg-glow glow-color-green"></div>
+                            <div class="svc-card-inner border-gradient-green">
+                                <div class="svc-reflection"></div>
+                                <div class="svc-icon-box box-glow-green">
+                                    <i class="bi bi-diagram-3"></i>
+                                </div>
+                                <h3 class="svc-title">REST API Development</h3>
+                                <p class="svc-desc">Creating powerful APIs for seamless communication between applications.</p>
+                                <div class="svc-tags">
+                                    <span class="svc-tag">Spring Security</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">JWT</span>
+                                    <span class="svc-tag-dot">•</span>
+                                    <span class="svc-tag">REST API</span>
+                                </div>
+                                <div class="svc-bottom-line bg-gradient-green"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- JOURNEY MAP SECTION -->
+        <section id="experience" class="journey-section scroll-reveal" aria-label="Journey Map">
+            <div class="journey-ambient-orb orb-1"></div>
+            <div class="journey-ambient-orb orb-2"></div>
+
+            <div class="container position-relative" style="z-index: 1;">
+                <div class="text-center" style="margin-bottom: 15px;">
+                    <h2 class="journey-main-title">My Journey</h2>
+                    <div class="journey-separator mx-auto mt-2 mb-3">
+                        <div class="separator-line"></div>
+                        <div class="separator-dot"></div>
+                        <div class="separator-line"></div>
+                    </div>
+                    <p class="journey-subtitle mx-auto">A path of learning, growth, and real-world development.</p>
+                </div>
+
+                <div class="journey-map-wrapper position-relative">
+                    
+                    <!-- Desktop Layout: Staircase zig-zag layout -->
+                    <div class="journey-desktop-view d-none d-lg-block w-100 position-relative mx-auto" style="max-width: 1000px; height: 520px;">
+                        
+                        <!-- SVG Background Path -->
+                        <svg viewBox="0 0 1000 520" preserveAspectRatio="none" class="position-absolute w-100 h-100" style="top:0; left:0; z-index:0; pointer-events:none;">
+                            <defs>
+                                <linearGradient id="journeyGlowPurple" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#A855F7" />
+                                    <stop offset="100%" stop-color="#3B82F6" />
+                                </linearGradient>
+                                <linearGradient id="journeyGlowBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#3B82F6" />
+                                    <stop offset="100%" stop-color="#06B6D4" />
+                                </linearGradient>
+                                <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+                                    <feGaussianBlur stdDeviation="5" result="blur" />
+                                    <feComposite in="SourceGraphic" in2="blur" operator="over" />
+                                </filter>
+                            </defs>
+                            
+                            <path d="M 320 105 C 380 105, 290 260, 350 260" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" />
+                            <path id="jpath-desktop-1" d="M 320 105 C 380 105, 290 260, 350 260" fill="none" stroke="url(#journeyGlowPurple)" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" filter="url(#glowFilter)" class="path-flow-animation"/>
+                                  
+                            <path d="M 650 260 C 710 260, 620 415, 680 415" fill="none" stroke="rgba(255,255,255,0.15)" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" />
+                            <path id="jpath-desktop-2" d="M 650 260 C 710 260, 620 415, 680 415" fill="none" stroke="url(#journeyGlowBlue)" stroke-width="4" stroke-dasharray="2 10" stroke-linecap="round" filter="url(#glowFilter)" class="path-flow-animation"/>
+
+                            <!-- Animated Particles -->
+                            <circle r="6" fill="#fff" filter="url(#glowFilter)">
+                                <animateMotion dur="4s" repeatCount="indefinite">
+                                    <mpath href="#jpath-desktop-1"/>
+                                </animateMotion>
+                            </circle>
+                            <circle r="6" fill="#fff" filter="url(#glowFilter)">
+                                <animateMotion dur="4s" begin="2s" repeatCount="indefinite">
+                                    <mpath href="#jpath-desktop-2"/>
+                                </animateMotion>
+                            </circle>
+
+                            <!-- Milestone Nodes -->
+                            <circle cx="320" cy="105" r="8" fill="#A855F7" opacity="0.4" filter="url(#glowFilter)">
+                                <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="320" cy="105" r="4" fill="#A855F7" />
+                            
+                            <circle cx="350" cy="260" r="8" fill="#3B82F6" opacity="0.4" filter="url(#glowFilter)">
+                                <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="350" cy="260" r="4" fill="#3B82F6" />
+
+                            <circle cx="650" cy="260" r="8" fill="#3B82F6" opacity="0.4" filter="url(#glowFilter)">
+                                <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="650" cy="260" r="4" fill="#3B82F6" />
+
+                            <circle cx="680" cy="415" r="8" fill="#06B6D4" opacity="0.4" filter="url(#glowFilter)">
+                                <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+                                <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+                            </circle>
+                            <circle cx="680" cy="415" r="4" fill="#06B6D4" />
+                        </svg>
+
+                        <!-- Card 1: Top Left -->
+                        <div class="position-absolute journey-card jc-purple" style="top: 40px; left: 20px; z-index: 2; width: 300px;">
+                            <div class="jc-number-badge">01</div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="jc-icon box-glow-purple"><i class="bi bi-mortarboard"></i></div>
+                                <div class="jc-details">
+                                    <h3 class="jc-title">Secondary School (SSC)</h3>
+                                    <p class="jc-desc mb-1">JB & Karp vidya Shankul, Surat</p>
+                                    <div class="jc-date-wrapper d-flex align-items-center gap-1 mb-1">
+                                        <i class="bi bi-calendar3"></i>
+                                        <span>2020</span>
+                                    </div>
+                                    <span class="jc-status-badge">🎓 Completed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: Center Middle -->
+                        <div class="position-absolute journey-card jc-blue" style="top: 195px; left: 350px; z-index: 2; width: 300px;">
+                            <div class="jc-number-badge">02</div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="jc-icon box-glow-blue"><i class="bi bi-laptop"></i></div>
+                                <div class="jc-details">
+                                    <h3 class="jc-title">Higher Secondary (HSC)</h3>
+                                    <p class="jc-desc mb-1">JB & Karp vidya Shankul, Surat</p>
+                                    <div class="jc-date-wrapper d-flex align-items-center gap-1 mb-1">
+                                        <i class="bi bi-calendar3"></i>
+                                        <span>2022</span>
+                                    </div>
+                                    <span class="jc-status-badge">🎓 Completed</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Bottom Right -->
+                        <div class="position-absolute journey-card jc-cyan" style="top: 350px; left: 680px; z-index: 2; width: 300px;">
+                            <div class="jc-number-badge">03</div>
+                            <div class="d-flex align-items-center gap-3">
+                                <div class="jc-icon box-glow-cyan"><i class="bi bi-code-slash"></i></div>
+                                <div class="jc-details">
+                                    <h3 class="jc-title">Bachelor of Computer App. (BCA)</h3>
+                                    <p class="jc-desc mb-1">Atmiya University, Surat</p>
+                                    <div class="jc-date-wrapper d-flex align-items-center gap-1 mb-1">
+                                        <i class="bi bi-calendar3"></i>
+                                        <span>2025</span>
+                                    </div>
+                                    <span class="jc-status-badge">🎓 Degree Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Layout: Flex Column -->
+                    <div class="journey-mobile-view d-lg-none mt-4">
+                        <div class="d-flex flex-column gap-4 align-items-center">
+                            
+                            <div class="journey-card jc-purple w-100 position-relative" style="max-width: 400px;">
+                                <div class="jc-number-badge">01</div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="jc-icon box-glow-purple"><i class="bi bi-mortarboard"></i></div>
+                                    <div class="jc-details">
+                                        <h3 class="jc-title">Secondary School (SSC)</h3>
+                                        <p class="jc-desc mb-1">JB & Karp vidya Shankul, Surat</p>
+                                        <div class="jc-date-wrapper d-flex align-items-center gap-1 mb-1">
+                                            <i class="bi bi-calendar3"></i>
+                                            <span>2020</span>
+                                        </div>
+                                        <span class="jc-status-badge">🎓 Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="journey-card jc-blue w-100 position-relative" style="max-width: 400px;">
+                                <div class="jc-number-badge">02</div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="jc-icon box-glow-blue"><i class="bi bi-laptop"></i></div>
+                                    <div class="jc-details">
+                                        <h3 class="jc-title">Higher Secondary (HSC)</h3>
+                                        <p class="jc-desc mb-1">JB & Karp vidya Shankul, Surat</p>
+                                        <div class="jc-date-wrapper d-flex align-items-center gap-1 mb-1">
+                                            <i class="bi bi-calendar3"></i>
+                                            <span>2022</span>
+                                        </div>
+                                        <span class="jc-status-badge">🎓 Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="journey-card jc-cyan w-100 position-relative" style="max-width: 400px;">
+                                <div class="jc-number-badge">03</div>
+                                <div class="d-flex align-items-center gap-3">
+                                    <div class="jc-icon box-glow-cyan"><i class="bi bi-code-slash"></i></div>
+                                    <div class="jc-details">
+                                        <h3 class="jc-title">Bachelor of Computer App. (BCA)</h3>
+                                        <p class="jc-desc mb-1">Atmiya University, Surat</p>
+                                        <div class="jc-date-wrapper d-flex align-items-center gap-1 mb-1">
+                                            <i class="bi bi-calendar3"></i>
+                                            <span>2025</span>
+                                        </div>
+                                        <span class="jc-status-badge">🎓 Degree Completed</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section py-4 scroll-reveal">
+            <div class="container py-0 pb-4">
+                <div class="section-header text-center mb-4">
+                    <h2 class="section-title">My Projects</h2>
+                    <div class="title-underline"></div>
+                </div>
+
+                <!-- Search & Filter Controls -->
+                <div class="row mb-4 justify-content-center align-items-center g-3">
+                    <div class="col-md-9">
+                        <div class="search-input-wrapper">
+                            <input type="text" id="project-search" class="form-control project-search-field" placeholder="Search projects by title, description or tech...">
+                            <i class="bi bi-search search-icon"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="dropdown project-category-dropdown">
+                            <button class="btn btn-dropdown-filter dropdown-toggle w-100" type="button" id="projectCategoryDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="dropdown-selected-text">All Projects</span>
+                                <i class="bi bi-chevron-down dropdown-arrow"></i>
+                            </button>
+                            <ul class="dropdown-menu dropdown-menu-glass w-100 animate slideIn" aria-labelledby="projectCategoryDropdown" id="filter-dropdown-menu">
+                                <li><a class="dropdown-item active" href="#" data-category="All">All Projects</a></li>
+                                <li><a class="dropdown-item" href="#" data-category="Web Application">Web Application</a></li>
+                                <li><a class="dropdown-item" href="#" data-category="REST API">REST API Projects</a></li>
+                                <li><a class="dropdown-item" href="#" data-category="Microservice">Microservice Projects</a></li>
+                                <li><a class="dropdown-item" href="#" data-category="AI Chatbot">AI Chatbot Projects</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projects Slider Wrapper -->
+                <div class="projects-slider-wrapper position-relative">
+                    <!-- Edge fade masks -->
+                    <div class="slider-fade slider-fade-left"></div>
+                    <div class="slider-fade slider-fade-right"></div>
+
+                    <!-- Projects Grid -->
+                    <div class="row g-4 projects-slider-track" id="projects-grid">
+                        
+                        <!-- Project 1: Yum Zone -->
+                        <div class="col-md-6 col-lg-4 project-item-card featured-project" data-category="Web Application" data-title="yum zone – web based food ordering application" data-desc="developed a secure role-based access control (rbac) system for user authentication and authorization. implemented multiple roles such as admin, manager, and user with role-specific permissions. added permission checks for secure operations and activity logging to track user actions with timestamps." data-tech="java, jsp, servlet, mysql, chatgpt, github">
+                            <div class="project-card h-100">
+                                <div class="project-img-wrapper">
+                                    <div class="project-img-placeholder d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-cart4 text-muted fs-1" style="color: var(--primary-glow) !important;"></i>
+                                    </div>
+                                </div>
+                                <div class="project-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="project-badge">Web Application</span>
+                                        <span class="badge bg-warning text-dark"><i class="bi bi-star-fill me-1"></i>Featured</span>
+                                    </div>
+                                    <h3 class="project-card-title mb-2">Yum Zone – Food Ordering</h3>
+                                    <p class="project-card-desc text-muted mb-3">Developed a secure Role-Based Access Control (RBAC) system for user authentication and authorization...</p>
+
+                                    <!-- Project Stats Row -->
+                                    <div class="project-stats-row">
+                                        <div class="stats-item">
+                                            <span class="stats-label">Tech Stack</span>
+                                            <span class="stats-val"><i class="bi bi-cpu me-1"></i>6 Techs</span>
+                                        </div>
+                                        <div class="stats-item text-center">
+                                            <span class="stats-label">Category</span>
+                                            <span class="stats-val"><i class="bi bi-folder2 me-1"></i>Web App</span>
+                                        </div>
+                                        <div class="stats-item text-end">
+                                            <span class="stats-label">Status</span>
+                                            <span class="stats-val">
+                                                <span class="status-dot completed-dot"></span>Completed
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-links-row mt-auto">
+                                        <a href="https://github.com/Ayushdhaduk/Yumzone" target="_blank" class="btn-project-action btn-project-github" title="GitHub Source"><i class="bi bi-github"></i> GitHub</a>
+                                        <button type="button" class="btn-project-action btn-project-details" data-bs-toggle="modal" data-bs-target="#projectModal1">
+                                            <i class="bi bi-info-circle"></i> Details
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="project-bg-number">01</div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Food Ordering REST API -->
+                        <div class="col-md-6 col-lg-4 project-item-card featured-project" data-category="REST API" data-title="food ordering – using rest api" data-desc="developed restful apis with jwt-based authentication and authorization using spring security. used hibernate (jpa) for orm - based database mapping and spring data jpa for crud operations. followed layered architecture (controller -> service -> repository) with mysql for persistent storage." data-tech="java, spring boot, hibernate (jpa), spring security, mysql, chatgpt, github">
+                            <div class="project-card h-100">
+                                <div class="project-img-wrapper">
+                                    <div class="project-img-placeholder d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-hdd-network text-muted fs-1" style="color: var(--primary-glow) !important;"></i>
+                                    </div>
+                                </div>
+                                <div class="project-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="project-badge">REST API</span>
+                                        <span class="badge bg-warning text-dark"><i class="bi bi-star-fill me-1"></i>Featured</span>
+                                    </div>
+                                    <h3 class="project-card-title mb-2">Food Ordering – REST API</h3>
+                                    <p class="project-card-desc text-muted mb-3">Developed RESTful APIs with JWT-based authentication and Spring Security authorization...</p>
+
+                                    <!-- Project Stats Row -->
+                                    <div class="project-stats-row">
+                                        <div class="stats-item">
+                                            <span class="stats-label">Tech Stack</span>
+                                            <span class="stats-val"><i class="bi bi-cpu me-1"></i>7 Techs</span>
+                                        </div>
+                                        <div class="stats-item text-center">
+                                            <span class="stats-label">Category</span>
+                                            <span class="stats-val"><i class="bi bi-folder2 me-1"></i>REST API</span>
+                                        </div>
+                                        <div class="stats-item text-end">
+                                            <span class="stats-label">Status</span>
+                                            <span class="stats-val">
+                                                <span class="status-dot completed-dot"></span>Completed
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-links-row mt-auto">
+                                        <a href="https://github.com/Ayushdhaduk/Foody" target="_blank" class="btn-project-action btn-project-github" title="GitHub Source"><i class="bi bi-github"></i> GitHub</a>
+                                        <button type="button" class="btn-project-action btn-project-details" data-bs-toggle="modal" data-bs-target="#projectModal2">
+                                            <i class="bi bi-info-circle"></i> Details
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="project-bg-number">02</div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Microservice -->
+                        <div class="col-md-6 col-lg-4 project-item-card featured-project" data-category="Microservice" data-title="microservice (spring boot + webclient)" data-desc="designed a 3-entity microservice system (user, order, payment) using spring boot and jpa. implemented dto-based architecture and inter-service communication using webclient for non-blocking rest calls." data-tech="java, spring boot, hibernate (jpa), mysql, webclient, postman">
+                            <div class="project-card h-100">
+                                <div class="project-img-wrapper">
+                                    <div class="project-img-placeholder d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-boxes text-muted fs-1" style="color: var(--primary-glow) !important;"></i>
+                                    </div>
+                                </div>
+                                <div class="project-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="project-badge">Microservice</span>
+                                        <span class="badge bg-warning text-dark"><i class="bi bi-star-fill me-1"></i>Featured</span>
+                                    </div>
+                                    <h3 class="project-card-title mb-2">Microservice Architecture</h3>
+                                    <p class="project-card-desc text-muted mb-3">Designed a 3-entity microservice system (User, Order, Payment) using Spring Boot and JPA...</p>
+
+                                    <!-- Project Stats Row -->
+                                    <div class="project-stats-row">
+                                        <div class="stats-item">
+                                            <span class="stats-label">Tech Stack</span>
+                                            <span class="stats-val"><i class="bi bi-cpu me-1"></i>6 Techs</span>
+                                        </div>
+                                        <div class="stats-item text-center">
+                                            <span class="stats-label">Category</span>
+                                            <span class="stats-val"><i class="bi bi-folder2 me-1"></i>Microservices</span>
+                                        </div>
+                                        <div class="stats-item text-end">
+                                            <span class="stats-label">Status</span>
+                                            <span class="stats-val">
+                                                <span class="status-dot completed-dot"></span>Completed
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-links-row mt-auto">
+                                        <a href="https://github.com/Ayushdhaduk/Microservice" target="_blank" class="btn-project-action btn-project-github" title="GitHub Source"><i class="bi bi-github"></i> GitHub</a>
+                                        <button type="button" class="btn-project-action btn-project-details" data-bs-toggle="modal" data-bs-target="#projectModal3">
+                                            <i class="bi bi-info-circle"></i> Details
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="project-bg-number">03</div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: Gemini Chatbot -->
+                        <div class="col-md-6 col-lg-4 project-item-card featured-project" data-category="AI Chatbot" data-title="gemini chatbot (spring boot + webclient)" data-desc="developed an ai-powered chatbot using spring boot integrated with google gemini api for dynamic responses. implemented non-blocking communication using webclient and handled json parsing for structured output. designed restful apis with a scalable architecture to efficiently process user queries." data-tech="java, spring boot, hibernate (jpa), mysql, webclient, postman">
+                            <div class="project-card h-100">
+                                <div class="project-img-wrapper">
+                                    <div class="project-img-placeholder d-flex align-items-center justify-content-center">
+                                        <i class="bi bi-robot text-muted fs-1" style="color: var(--primary-glow) !important;"></i>
+                                    </div>
+                                </div>
+                                <div class="project-body p-4 d-flex flex-column">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <span class="project-badge">AI Chatbot</span>
+                                        <span class="badge bg-warning text-dark"><i class="bi bi-star-fill me-1"></i>Featured</span>
+                                    </div>
+                                    <h3 class="project-card-title mb-2">Gemini AI Chatbot</h3>
+                                    <p class="project-card-desc text-muted mb-3">Developed an AI-powered chatbot using Spring Boot integrated with Google Gemini API...</p>
+
+                                    <!-- Project Stats Row -->
+                                    <div class="project-stats-row">
+                                        <div class="stats-item">
+                                            <span class="stats-label">Tech Stack</span>
+                                            <span class="stats-val"><i class="bi bi-cpu me-1"></i>6 Techs</span>
+                                        </div>
+                                        <div class="stats-item text-center">
+                                            <span class="stats-label">Category</span>
+                                            <span class="stats-val"><i class="bi bi-folder2 me-1"></i>AI Chatbot</span>
+                                        </div>
+                                        <div class="stats-item text-end">
+                                            <span class="stats-label">Status</span>
+                                            <span class="stats-val">
+                                                <span class="status-dot completed-dot"></span>Completed
+                                            </span>
+                                        </div>
+                                    </div>
+
+                                    <div class="project-links-row mt-auto">
+                                        <a href="https://github.com/Ayushdhaduk/Gemini-Chatbot" target="_blank" class="btn-project-action btn-project-github" title="GitHub Source"><i class="bi bi-github"></i> GitHub</a>
+                                        <button type="button" class="btn-project-action btn-project-details" data-bs-toggle="modal" data-bs-target="#projectModal4">
+                                            <i class="bi bi-info-circle"></i> Details
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="project-bg-number">04</div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- /Projects Grid -->
+
+                    <!-- Floating Arrows -->
+                    <button class="slider-arrow slider-arrow-left" id="projects-prev" aria-label="Previous">
+                        <i class="bi bi-chevron-left"></i>
+                    </button>
+                    <button class="slider-arrow slider-arrow-right" id="projects-next" aria-label="Next">
+                        <i class="bi bi-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Progress Bar -->
+                <div class="slider-progress-wrapper">
+                    <div class="slider-progress-track">
+                        <div class="slider-progress-fill" id="projects-progress-fill"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section scroll-reveal">
+            <div class="achievements-ambient-orb orb-1"></div>
+            <div class="achievements-ambient-orb orb-2"></div>
+            <div class="achievements-particles" id="achievements-particles"></div>
+
+            <div class="achievements-container w-100">
+                <div class="section-header text-center mb-4">
+                    <h2 class="section-title">Achievements & Certificates</h2>
+                    <div class="title-underline"></div>
+                </div>
+                
+                <div class="text-center py-4">
+                    <p class="text-muted">Academic achievements and developer credentials will be listed here.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section py-4 scroll-reveal position-relative">
+            <div class="contact-glow-1"></div>
+            <div class="contact-glow-2"></div>
+            
+            <div class="container py-2">
+                <div class="contact-unified-card mx-auto">
+                    <!-- Header inside the card -->
+                    <div class="section-header text-center p-4 pb-2 mb-0">
+                        <h2 class="section-title mb-2">Contact</h2>
+                        <p class="section-subtitle mx-auto text-muted mb-0" style="max-width: 650px; font-size: 0.95rem; line-height: 1.5;">
+                            Let's discuss your project, collaboration opportunities, or any ideas you have in mind.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-horizontal-divider"></div>
+                    
+                    <div class="row g-0 align-items-start">
+                        <!-- Left Panel: Brand info column -->
+                        <div class="col-lg-5 contact-left-panel">
+                            <div class="d-flex flex-column gap-3">
+                                <a href="mailto:Ayushdhaduk07@gmail.com" class="contact-info-chip">
+                                    <div class="chip-icon"><i class="bi bi-envelope-open-fill"></i></div>
+                                    <div class="chip-content">
+                                        <span class="chip-label">Email</span>
+                                        <span class="chip-value" title="Ayushdhaduk07@gmail.com">Ayushdhaduk07@gmail.com</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="tel:+917046258868" class="contact-info-chip">
+                                    <div class="chip-icon"><i class="bi bi-telephone-inbound-fill"></i></div>
+                                    <div class="chip-content">
+                                        <span class="chip-label">Phone</span>
+                                        <span class="chip-value">+91 70462 58868</span>
+                                    </div>
+                                </a>
+                                
+                                <a href="https://github.com/Ayushdhaduk" target="_blank" class="btn-pill-glass text-center justify-content-center github-btn">
+                                    <i class="bi bi-github me-2"></i> GitHub
+                                </a>
+                                <a href="https://linkedin.com/in/ayush-dhaduk" target="_blank" class="btn-pill-glass text-center justify-content-center linkedin-btn">
+                                    <i class="bi bi-linkedin me-2"></i> LinkedIn
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Right Panel: Form column -->
+                        <div class="col-lg-7 contact-right-panel">
+                            <h4 class="h5 mb-3 fw-bold card-title-gradient">Send a Direct Message</h4>
+                            
+                            <div id="contact-alert-wrapper"></div>
+                            
+                            <form id="contact-form" novalidate>
+                                <div class="row g-4 mb-4">
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control glass-input-floating" id="contact-name" name="name" required placeholder="John Doe">
+                                            <label for="contact-name">Your Name</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating">
+                                            <input type="email" class="form-control glass-input-floating" id="contact-email" name="email" required placeholder="john@domain.com">
+                                            <label for="contact-email">Your Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <input type="text" class="form-control glass-input-floating" id="contact-subject" name="subject" required placeholder="Project Collaboration Opportunity">
+                                    <label for="contact-subject">Subject</label>
+                                </div>
+                                <div class="form-floating mb-4">
+                                    <textarea class="form-control glass-input-floating" id="contact-message" name="message" style="height: 120px" required placeholder="Write your message here..."></textarea>
+                                    <label for="contact-message">Message</label>
+                                </div>
+                                <button type="submit" id="contact-submit-btn" class="btn btn-cta-gradient w-100 py-3">
+                                    <span id="btn-text">Send Message &nbsp;→</span>
+                                    <span id="btn-spinner" class="spinner-border spinner-border-sm ms-2 d-none" role="status" aria-hidden="true"></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <p class="mb-0 text-muted">&copy; 2026 Ayush Dhaduk. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project 1 Modal -->
+    <div class="modal fade project-modal-glass" id="projectModal1" tabindex="-1" aria-labelledby="projectModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title fs-5" id="projectModalLabel1">Yum Zone – Web Based Food Ordering Application</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-3">
+                        <div class="col-lg-8">
+                            <h5 class="mb-3">Project Breakdown</h5>
+                            <p class="text-muted">
+                                Developed a secure Role-Based Access Control (RBAC) system for user authentication and authorization. Implemented multiple roles such as Admin, Manager, and User with role-specific permissions. Added permission checks for secure operations and activity logging to track user actions with timestamps.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="modal-details-card p-3 rounded">
+                                <h6 class="border-bottom pb-2 mb-3">Project Details</h6>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Category:</span>
+                                    <strong>Web Application</strong>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Technologies:</span>
+                                    <div class="d-flex flex-wrap gap-1 mt-1">
+                                        <span class="badge tech-pill">Java</span>
+                                        <span class="badge tech-pill">JSP</span>
+                                        <span class="badge tech-pill">Servlet</span>
+                                        <span class="badge tech-pill">MySQL</span>
+                                        <span class="badge tech-pill">ChatGPT</span>
+                                        <span class="badge tech-pill">GitHub</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 d-grid gap-2">
+                                    <a href="https://github.com/Ayushdhaduk/Yumzone" target="_blank" class="btn btn-outline-glass btn-sm"><i class="bi bi-github me-2"></i>Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 2 Modal -->
+    <div class="modal fade project-modal-glass" id="projectModal2" tabindex="-1" aria-labelledby="projectModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title fs-5" id="projectModalLabel2">Food Ordering – Using REST API</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-3">
+                        <div class="col-lg-8">
+                            <h5 class="mb-3">Project Breakdown</h5>
+                            <p class="text-muted">
+                                Developed RESTful APIs with JWT-based authentication and authorization using Spring Security. Used Hibernate (JPA) for ORM-based database mapping and Spring Data JPA for CRUD operations. Followed layered architecture (Controller &rarr; Service &rarr; Repository) with MySQL for persistent storage.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="modal-details-card p-3 rounded">
+                                <h6 class="border-bottom pb-2 mb-3">Project Details</h6>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Category:</span>
+                                    <strong>REST API</strong>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Technologies:</span>
+                                    <div class="d-flex flex-wrap gap-1 mt-1">
+                                        <span class="badge tech-pill">Java</span>
+                                        <span class="badge tech-pill">Spring Boot</span>
+                                        <span class="badge tech-pill">Hibernate</span>
+                                        <span class="badge tech-pill">Spring Security</span>
+                                        <span class="badge tech-pill">MySQL</span>
+                                        <span class="badge tech-pill">ChatGPT</span>
+                                        <span class="badge tech-pill">GitHub</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 d-grid gap-2">
+                                    <a href="https://github.com/Ayushdhaduk/Foody" target="_blank" class="btn btn-outline-glass btn-sm"><i class="bi bi-github me-2"></i>Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 3 Modal -->
+    <div class="modal fade project-modal-glass" id="projectModal3" tabindex="-1" aria-labelledby="projectModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title fs-5" id="projectModalLabel3">Microservice (Spring Boot + WebClient)</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-3">
+                        <div class="col-lg-8">
+                            <h5 class="mb-3">Project Breakdown</h5>
+                            <p class="text-muted">
+                                Designed a 3-entity microservice system (User, Order, Payment) using Spring Boot and JPA. Implemented DTO-based architecture and inter-service communication using WebClient for non-blocking REST calls.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="modal-details-card p-3 rounded">
+                                <h6 class="border-bottom pb-2 mb-3">Project Details</h6>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Category:</span>
+                                    <strong>Microservice</strong>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Technologies:</span>
+                                    <div class="d-flex flex-wrap gap-1 mt-1">
+                                        <span class="badge tech-pill">Java</span>
+                                        <span class="badge tech-pill">Spring Boot</span>
+                                        <span class="badge tech-pill">Hibernate</span>
+                                        <span class="badge tech-pill">MySQL</span>
+                                        <span class="badge tech-pill">WebClient</span>
+                                        <span class="badge tech-pill">Postman</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 d-grid gap-2">
+                                    <a href="https://github.com/Ayushdhaduk/Microservice" target="_blank" class="btn btn-outline-glass btn-sm"><i class="bi bi-github me-2"></i>Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project 4 Modal -->
+    <div class="modal fade project-modal-glass" id="projectModal4" tabindex="-1" aria-labelledby="projectModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content glass-modal-content">
+                <div class="modal-header border-0">
+                    <h4 class="modal-title fs-5" id="projectModalLabel4">Gemini Chatbot (Spring Boot + WebClient)</h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-3">
+                        <div class="col-lg-8">
+                            <h5 class="mb-3">Project Breakdown</h5>
+                            <p class="text-muted">
+                                Developed an AI-powered chatbot using Spring Boot integrated with Google Gemini API for dynamic responses. Implemented non-blocking communication using WebClient and handled JSON parsing for structured output. Designed RESTful APIs with a scalable architecture to efficiently process user queries.
+                            </p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="modal-details-card p-3 rounded">
+                                <h6 class="border-bottom pb-2 mb-3">Project Details</h6>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Category:</span>
+                                    <strong>AI Chatbot</strong>
+                                </div>
+                                <div class="mb-2">
+                                    <span class="small text-muted d-block">Technologies:</span>
+                                    <div class="d-flex flex-wrap gap-1 mt-1">
+                                        <span class="badge tech-pill">Java</span>
+                                        <span class="badge tech-pill">Spring Boot</span>
+                                        <span class="badge tech-pill">Hibernate</span>
+                                        <span class="badge tech-pill">MySQL</span>
+                                        <span class="badge tech-pill">WebClient</span>
+                                        <span class="badge tech-pill">Postman</span>
+                                    </div>
+                                </div>
+                                <div class="mt-4 d-grid gap-2">
+                                    <a href="https://github.com/Ayushdhaduk/Gemini-Chatbot" target="_blank" class="btn btn-outline-glass btn-sm"><i class="bi bi-github me-2"></i>Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg class="btt-ring" viewBox="0 0 56 56">
+            <circle class="btt-ring-bg" cx="28" cy="28" r="25"></circle>
+            <circle class="btt-ring-progress" cx="28" cy="28" r="25"></circle>
+        </svg>
+        <i class="bi bi-arrow-up btt-icon"></i>
+    </button>
+
+    <!-- Bootstrap 5 Bundle JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js?v=1.5" defer></script>
+</body>
+</html>

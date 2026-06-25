@@ -1,0 +1,27 @@
+# Virtual Environment internals (ignore venv, keep Django project)
+myenv/Scripts/
+myenv/Lib/
+myenv/Include/
+myenv/pyvenv.cfg
+myenv/share/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Django local DB & media
+*.sqlite3
+media/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Static collected
+staticfiles/
